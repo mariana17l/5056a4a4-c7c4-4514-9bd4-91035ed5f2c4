@@ -31,6 +31,7 @@ class Amortization(object):
         return table
 
 
+
 def get_plot(self):
     table = self.get_table()
     fig = plt.figure(1)
