@@ -9,10 +9,14 @@ class Main(object):
     def future_value(present_value, interest, n):
         return present_value * (1 + interest) ** n
 
+
+
     @staticmethod
     def annuity(amount, interest, n):
         amortization = Amortization(amount, interest, n)
         return amortization.annuity()
+
+
 
     def table(self, amount, interest, n, rows=10, save=""):
         amortization = Amortization(amount,interest,n)
@@ -21,7 +25,9 @@ class Main(object):
         if save:
             table.to_csv(save)
 
-    def graph(self, amount, interest, n, save=""):
+
+
+  def graph(self, amount, interest, n, save=""):
         amortization = Amortization(amount, interest, n)
         fig = amortization.get_plot()
         if save:
