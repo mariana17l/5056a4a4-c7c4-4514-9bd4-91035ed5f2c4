@@ -5,7 +5,7 @@ object Hello {
 
   //Greeting function
   def greeting (name: String = default): String  = {
-   s"Hello , $name"
+   s"Hello, $name!"
  }
 
   //Main method
