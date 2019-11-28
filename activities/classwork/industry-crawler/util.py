@@ -46,3 +46,5 @@ class StringWrapper(object):
     @property
     def value(self):
         return self._sensitivity_matching(self._value)
+
+
