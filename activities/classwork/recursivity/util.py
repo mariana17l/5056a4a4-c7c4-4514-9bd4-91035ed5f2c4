@@ -45,3 +45,5 @@ class TriangleBuilder(object):
 
     def get_row(self, index):
         return [str(self.get_or_create(index, j )) for j in range(index+1)]
+
+
