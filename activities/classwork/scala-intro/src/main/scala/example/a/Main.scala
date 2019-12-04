@@ -1,15 +1,15 @@
-package example.a.model
+package example.a
 
-case class Timestamp(seconds:Int)
-def +(other: Timestamp): Timestamp =
-Timestamp(seconds + other.seconds)
+import example.a.model.Timestamp
 
-object Timestamp {
-  val secondsInHour: Int= 60*60
-  val secondsInMinutes: Int = 60
+object Main {
+  def main(args: Array[String]): Unit = {
+    val Array(s1, s2) = args
 
-  def apply(hours: Int, minutes: Int, seconds: Int): Timestamp =
-    Timestamp(seconds = secondsInHour * hour + secondsInMinutes * minutes + seconds)
+    val t1 = Timestamp(seconds = s1.toInt)
+    val t2 = Timestamp(seconds = s2.toInt)
 
+    print(t1 + t2)
+  }
 
 }
